@@ -1,0 +1,66 @@
+body {
+	font-family: arial;
+	font-size: 13px;
+}
+
+.subtree {
+	margin-left: 1em;
+}
+
+.label {
+	cursor: pointer;
+}
+
+.label:hover {
+	background-color: #EEE;
+}
+
+.item > span:before {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	text-align: center;
+	font-size: 15px;
+	border: 1px solid #AAA;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+.collapsed > span:before {
+	content: "+";
+}
+
+.expanded > span:before {
+	content: "-";
+}
+
+.collapsed > div {
+	display: none;
+}
+
+.former {
+	color: grey;
+}
+
+.label > a {
+	vertical-align: super;
+	font-size: 4px;
+	margin-left: 6px;
+	text-decoration: none;
+	visibility: hidden;
+}
+
+.label:hover > a {
+	visibility: visible;
+}
+
+.label a:before {
+	/* content: "\258C\2588\0020\2588\0020\258C\258C\2588\0020\258C\2588\0020\258C\258C"; */
+	content: "\258C\2588\0020\2588";
+	color:#990000;
+}
+
+form {
+	border-bottom: 1px #AAA solid;
+	padding: 0px 5px 6px;
+}
